@@ -1,0 +1,17 @@
+import pymysql as my
+con = my.connect( host='127.0.0.1', user='root', password='ruddud@1201!sql', db='mydb')
+c = con.cursor()
+
+c.execute('create table movie(title char(20),actor char(20),audience int)')
+c.execute('insert into lunch values("명량","최민식", 5000)')
+c.execute('update  score  set actor="김혜수"  where actor = "이병헌")')
+c.execute('delete from score where title = "광해" ')
+
+c.execute('select * from movie1')
+
+res=c.fecthall()
+
+con.commit()
+c.close()
+
+con.close()
