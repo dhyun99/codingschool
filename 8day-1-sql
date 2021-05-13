@@ -99,7 +99,15 @@ title  director  actor  audience
 해운대    윤제균       설경구    1139
 광해     추창민       이병헌    1232
 도둑들    최동훈       김혜수    1302
-sqlite>
+sqlite> insert into movie values('명량', '김한민','최민식','1761');
+sqlite> select * from movie order by audience desc;
+title  director  actor  audience
+-----  --------  -----  --------
+명량     김한민       최민식    1761
+도둑들    최동훈       김혜수    1302
+광해     추창민       이병헌    1232
+해운대    윤제균       설경구    1139
+변호인    양우석       송강호    1137
 
 
 
